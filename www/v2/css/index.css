@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333; /* Чёрный цвет текста */
+}
+
+.header-top {
+    background: #fff;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.header-top .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-top .quick-contact-icons {
+    display: flex;
+    align-items: center;
+}
+
+.header-top .quick-contact-icons .text {
+    margin-left: 10px;
+}
+
+.header-top .quick-contact-icons .text .h4 {
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.intro-section {
+    background-size: cover;
+    background-position: center;
+    padding: 150px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.intro-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.site-wrap {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+}
+
+@media (max-width: 992px) {
+    .header-top .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .header-top .quick-contact-icons {
+        justify-content: center;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-top .d-lg-none {
+        display: block;
+    }
+    .header-top .d-none.d-lg-block {
+        display: none;
+    }
+}
+
+.footer {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+}
+
+.footer h4 {
+    color: #333;
+    font-size: 20px; /* Увеличим размер заголовков в футере */
+    margin-bottom: 20px; /* Увеличим отступ между заголовками и текстом */
+}
+
+.footer p {
+    color: #666;
+    font-size: 16px; /* Уменьшим размер обычного текста */
+    line-height: 1.8; /* Увеличим межстрочный интервал для лучшей читаемости */
+}
+
+@media (max-width: 767px) {
+    .footer {
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .footer {
+        text-align: left;
+    }
+}
