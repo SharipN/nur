@@ -1,6 +1,5 @@
 <?php require_once '../function/connect.php' ;?>
 
-<?php session_start();?>
 
 <?php
 $login=$_POST["login"];
@@ -10,11 +9,5 @@ $sql = $pdo->prepare("SELECT id FROM login WHERE login=:login AND password=:pass
 $sql->execute(array('login' =>$login,'password'=>$password));
 $array=$sql->fetch(PDO::FETCH_ASSOC);
 
-if($array["id"]>0) {
-    $_SESSION['login']=$array["login"];
-    header('Location:../admin.php');
-}
-else{
-    header('Location:../login.php');
-}
+
 ?>
