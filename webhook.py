@@ -8,7 +8,7 @@ app = Flask(__name__)
 def webhook():
     if request.method == 'POST':
         # Перейдите в каталог с вашим репозиторием
-        os.chdir('/path/to/your/repository')
+        os.chdir('/home/nurgisa0136/nur')
         
         # Выполните git pull и перезапуск Docker-контейнеров
         subprocess.run(['git', 'pull', 'origin', 'main'])
