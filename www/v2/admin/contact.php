@@ -82,7 +82,7 @@
     <h1>Редактирование Контактной информации</h1>
 
     <div class="welcome-message">
-        <?php echo "Добрый день, ".$_SESSION['login']; ?>
+        <?php echo "Добрый день, "; ?>
         <br><br>
         <a href="/logout.php">Выйти</a>
     </div>
