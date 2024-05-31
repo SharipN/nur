@@ -29,14 +29,14 @@ $res = $sql->fetch(PDO::FETCH_ASSOC);
           <div class="col-lg-3 d-none d-lg-block">
             <div class="quick-contact-icons d-flex align-items-center">
               <div class="text">
-                <span class="h4 d-block"> <a href = "http://nur.tech-news-forum.com/admin.php"> <?php echo $res["city"]; ?> </a> </span>
+                <span class="h4 d-block">  <?php echo $res["city"]; ?>  </span>
               </div>
             </div>
           </div>
           <div class="col-lg-3 d-none d-lg-block">
             <div class="quick-contact-icons d-flex align-items-center">
               <div class="text">
-                <span class="h4 d-block"> <a href ="http://nur.tech-news-forum.com/admin.php" > <?php echo $res["phone"]; ?></a> </span>
+                <span class="h4 d-block"> <?php echo $res["phone"]; ?> </span>
               </div>
             </div>
           </div>
