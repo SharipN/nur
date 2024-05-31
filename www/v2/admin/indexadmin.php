@@ -81,7 +81,7 @@
 <?php session_start(); ?>
 <?php require_once '../function/connect.php' ;?>
 
-<?php echo "Добрый день".$_SESSION['login']; ?>
+<?php echo "Добрый день"; ?>
 <br><br>
 <a href="/logout.php">Выйти</a>
     <br>
