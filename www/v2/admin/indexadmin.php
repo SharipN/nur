@@ -78,7 +78,7 @@
 <h1> Редактирование Головы </h1>
 
 
-<?php session_start(); ?>
+
 <?php require_once '../function/connect.php' ;?>
 
 <?php echo "Добрый день"; ?>
