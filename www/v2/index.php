@@ -1,4 +1,4 @@
-<?php /*require 'public/contact.php';adsada*/ ?>
+<?php /*require 'public/contact.php';adsadaasdasdasd*/ ?>
 <?php require_once './function/connect.php';  ?>
 
 <?php
