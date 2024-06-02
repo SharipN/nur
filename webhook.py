@@ -12,8 +12,8 @@ def webhook():
         
         # Выполните git pull и перезапуск Docker-контейнеров
         subprocess.run(['git', 'pull', 'origin', 'main'])
-        subprocess.run(['sudo', 'docker-compose', 'down'])
-        subprocess.run(['sudo', 'docker-compose', 'up', '-d'])
+        subprocess.run(['sudo', 'docker compose', 'down'])
+        subprocess.run(['sudo', 'docker compose', 'up', '-d'])
         
         return 'OK', 200
 
